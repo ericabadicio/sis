@@ -1,3 +1,15 @@
+<?php
+	#COMMENT
+	//COMMENT
+	/*COMMENT*/
+	$studentNo = "";
+	$firstName = "";
+	$lastName = "";
+	$emailAddress = "";
+	$password = "";
+	$birthDate = null;
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -65,7 +77,14 @@
 									class="form-control" required />
 							</div>
 						</div>
-
+						<div class="form-group">
+							<div class="col-lg-offset-4 col-lg-8">
+								<button name="register"
+									class="bt btn-success">
+									Register
+								</button>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
