@@ -11,12 +11,6 @@
 		$emailAddress = $_POST['email'];
 		$password = $_POST['pwd'];
 		$birthDate = $_POST['bday'];
-
-			echo "Your Password is " . $password .
-			". </br>
-			Your Birthday is " . $birthDate .
-			". </br></br>
-			The time is " . date('c');
 	}
 ?>
 
@@ -25,8 +19,12 @@
 	<head>
 		<title>Student Registration</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
+		<?php
+			include("primaryheader.html");
+		?>
 		<div class="container">
 			<h1 class="text-center">
 				<?php 
@@ -50,6 +48,18 @@
 					<p>
 						<?php 
 							echo "<strong>Password: </strong> " . $password . "</br>"; 
+						?>
+					</p>
+
+					<p>
+						<?php 
+							echo "<strong>Date of Birth: </strong> " . $birthDate . "</br>"; 
+						?>
+					</p>
+
+					<p>
+						<?php 
+							echo "<strong>Current Time: </strong> " . date('c') . "</br>"; 
 						?>
 					</p>
 				</div>

@@ -15,21 +15,34 @@
 	<head>
 		<title>Student Registration</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet">
+
+		<style>
+			input{
+    			display:block;
+			}
+			label{
+				display:block;
+			}
+		</style>
+
 	</head>
 	<body>
+		<?php
+			include("regHeader.html");
+		?>
 		<div class="container">
-			<h1 class="text-center">Student Registration</h1>
 			<div class="col-lg-offset-3 col-lg-6">
-				<div class="well">
 					<form method="POST" action="welcome.php"
 						class="form-horizontal">
+						<h1 class="text-center">Sign Up</h1>
 						<div class="form-group">
 							<label class="control-label col-lg-4">
 								Student ID
 							</label>
 							<div class="col-lg-8">
 								<input type="text" name="sid"
-									class="form-control" required />
+									class="form-control" placeholder="Enter ID Number" required />
 							</div>
 						</div>
 						<div class="form-group">
@@ -38,7 +51,7 @@
 							</label>
 							<div class="col-lg-8">
 								<input type="text" name="ln"
-									class="form-control" required />
+									class="form-control" placeholder="Enter Last Name" required />
 							</div>
 						</div>
 						<div class="form-group">
@@ -47,7 +60,7 @@
 							</label>
 							<div class="col-lg-8">
 								<input type="text" name="fn"
-									class="form-control" required />
+									class="form-control" placeholder="Enter First Name" required />
 							</div>
 						</div>
 						<div class="form-group">
@@ -56,7 +69,7 @@
 							</label>
 							<div class="col-lg-8">
 								<input type="email" name="email"
-									class="form-control" required />
+									class="form-control" placeholder="Enter Email Address" required />
 							</div>
 						</div>
 						<div class="form-group">
@@ -65,7 +78,7 @@
 							</label>
 							<div class="col-lg-8">
 								<input type="password" name="pwd"
-									class="form-control" required />
+									class="form-control" placeholder="Enter Password" required />
 							</div>
 						</div>
 						<div class="form-group">
@@ -86,7 +99,6 @@
 							</div>
 						</div>
 					</form>
-				</div>
 			</div>
 		</div>
 	</body>
