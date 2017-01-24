@@ -1,7 +1,4 @@
 <?php
-	#COMMENT
-	//COMMENT
-	/*COMMENT*/
 	$studentNo = "";
 	$firstName = "";
 	$lastName = "";
@@ -29,77 +26,69 @@
 	</head>
 	<body>
 		<?php
-			include("regHeader.html");
+			include("Header.html");
 		?>
+		<br/>
 		<div class="container">
-			<div class="col-lg-offset-3 col-lg-6">
-					<form method="POST" action="welcome.php"
-						class="form-horizontal">
-						<h1 class="text-center">Sign Up</h1>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								Student ID
-							</label>
-							<div class="col-lg-8">
-								<input type="text" name="sid"
-									class="form-control" placeholder="Enter ID Number" required />
-							</div>
+			<div class="col-lg-offset-1 col-lg-5">
+				<form method="POST" action="welcome.php"
+					class="form-horizontal">
+					<h1><strong>Register</strong></h1>
+					<div class="form-group">
+						<div class="col-lg-8">
+							<input type="text" name="sid"
+								class="form-control" placeholder="ID Number" required />
 						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								Last Name
-							</label>
-							<div class="col-lg-8">
-								<input type="text" name="ln"
-									class="form-control" placeholder="Enter Last Name" required />
-							</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-4">
+							<input type="text" name="ln"
+								class="form-control" placeholder="Last Name" required />
 						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								First Name
-							</label>
-							<div class="col-lg-8">
-								<input type="text" name="fn"
-									class="form-control" placeholder="Enter First Name" required />
-							</div>
+						<div class="col-lg-4">
+							<input type="text" name="fn"
+								class="form-control" placeholder="First Name" required />
 						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								Email Address
-							</label>
-							<div class="col-lg-8">
-								<input type="email" name="email"
-									class="form-control" placeholder="Enter Email Address" required />
-							</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-8">
+							<input type="email" name="email"
+								class="form-control" placeholder="Email Address" required />
 						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								Password
-							</label>
-							<div class="col-lg-8">
-								<input type="password" name="pwd"
-									class="form-control" placeholder="Enter Password" required />
-							</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-8">
+							<input type="password" name="pwd"
+								class="form-control" placeholder="Password" required />
 						</div>
-						<div class="form-group">
-							<label class="control-label col-lg-4">
-								Birthdate
-							</label>
-							<div class="col-lg-8">
-								<input type="date" name="bday"
-									class="form-control" required />
-							</div>
+					</div>
+					<div class="form-group">
+							<h5>&nbsp; &nbsp; <strong>Birthday</strong></h5>
+						<div class="col-lg-8">
+							<input type="date" name="bday"
+								class="form-control" required />
 						</div>
-						<div class="form-group">
-							<div class="col-lg-offset-4 col-lg-8">
-								<button name="register"
-									class="bt btn-success">
-									Register
-								</button>
-							</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-12">
+							<button name="register"
+								class="bt btn-success">
+								Register
+							</button>
 						</div>
-					</form>
+					</div>
+				</form>
 			</div>
+
+			<div class="col-lg-6" style="text-align: right">
+					<div class="col-lg-6">
+						<img src="DLS-CSB_Seal.png" />
+					</div>
+					<div class="col-lg-6">
+						<img src="download.png" width="210px" />
+					</div>
+			</div>
+
 		</div>
 	</body>
 </html>
